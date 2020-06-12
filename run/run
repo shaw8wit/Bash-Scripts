@@ -1,0 +1,41 @@
+#!/bin/bash
+# shaw8wit
+for a in "$@"
+do
+	if [[ -f "$a" ]]; then
+		echo " 🏃 🏃 🏃 🏃 🏃 🏃 🏃 🏃 🏃~ $a running ~🏃 🏃 🏃 🏃 🏃 🏃 🏃 🏃 🏃"
+		echo "--------------------------------------------------------------------------------"
+		case $a in
+			*".txt")
+				cat $a
+				;;
+			*".py")
+				python3 $a
+				;;
+			*".c")
+				name=${a:0:-2}
+				gcc -o $name $a
+				./$name
+				;;
+			*".cpp")
+				name=${a:0:-4}
+				g++ -o $name $a
+				./$name
+				;;
+			*".sh")
+				./$a
+				;;
+			*".java")
+				name=${a:0:-5}
+				javac $a
+				java $name
+				;;
+			*)
+				echo "Not Supported!"
+				;;
+		esac
+	else
+		echo "File doesn't Exist!"
+	fi
+
+done
