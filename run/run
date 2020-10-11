@@ -3,8 +3,6 @@
 for a in "$@"
 do
 	if [[ -f "$a" ]]; then
-		echo " 🏃 🏃 🏃 🏃 🏃 🏃 🏃 🏃 🏃~ $a running ~🏃 🏃 🏃 🏃 🏃 🏃 🏃 🏃 🏃"
-		echo "--------------------------------------------------------------------------------"
 		case $a in
 			*".txt")
 				cat $a
@@ -29,6 +27,14 @@ do
 				name=${a:0:-5}
 				javac $a
 				java $name
+				;;
+			*".dart")
+				dart $a
+				;;
+			*".pm")
+				prove .
+				perltidy -b -bext='/' $a
+				perl $a
 				;;
 			*)
 				echo "Not Supported!"

@@ -1,6 +1,6 @@
 # What is run?
 -> run command can be used to compile and run any file with a single command
--> currently supports .txt .c .cpp .java .py .sh
+-> currently supports .txt .c .cpp .java .py .sh .dart .pm
 
 ## Prerequisites
 -> needs a bash terminal
