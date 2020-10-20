@@ -1,0 +1,14 @@
+#!/bin/bash
+# shaw8wit
+
+# add details
+destination_path="xyz/abc"
+template_name="abc.cpp"
+editor="subl"
+
+# don't change beyond this other than file extension
+generated_file="$1.cpp"
+
+cd $destination_path
+cp $template_name $generated_file
+$editor $generated_file # add more files here if required
