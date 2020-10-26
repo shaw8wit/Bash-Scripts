@@ -13,4 +13,4 @@ Needs a bash terminal.
 ## Setup
 + extract or clone repo locally.
 + add the location of the necessary script file into the system `PATH` variable.
-+ in the terminal `cd` into the location of the file and type `chmod +x <script_name>` where `<script_name>` is the name of the file you want to give the "execute" permission to.
++ in the terminal `cd` into the location of the file and type `chmod +x <script_name>` or `chmod 777 <script_name` where `<script_name>` is the name of the file you want to give the "execute" permission to.
