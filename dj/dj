@@ -1,0 +1,11 @@
+#!/bin/bash
+
+while [ -n "$1" ]; do
+	case "$1" in
+	rs) python manage.py runserver;;
+	mk) python manage.py makemigrations;;
+	mg) python manage.py migrate;;
+	*) echo -e "currently supports only:\nrs -> runserver\nmk -> makemigrations\nmg -> migrate" ;;
+	esac
+	shift
+done
