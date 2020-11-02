@@ -5,7 +5,8 @@ while [ -n "$1" ]; do
 	rs) python manage.py runserver;;
 	mk) python manage.py makemigrations;;
 	mg) python manage.py migrate;;
-	*) echo -e "currently supports only:\nrs -> runserver\nmk -> makemigrations\nmg -> migrate" ;;
+	cr) python manage.py createsuperuser;;
+	*) echo -e "currently supports only:\nrs -> runserver\nmk -> makemigrations\nmg -> migrate\ncr -> createsuperuser" ;;
 	esac
 	shift
 done
