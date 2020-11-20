@@ -1,0 +1,12 @@
+#!/bin/bash
+
+case "$1" in
+	cr) flutter create "$2";;
+	r) flutter run -d "$2";;
+	cl) flutter clean;;
+	v) flutter --version;;
+	t) flutter test;;
+	up) flutter upgrade;;
+	h) flutter -h -v;;
+	*) echo -e "currently supports only:\ncr -> create\nr -> run\ncl -> clean\nv -> version\nt -> test\nup -> upgrade\nh -> help" ;;
+esac
