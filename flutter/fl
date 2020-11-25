@@ -8,5 +8,11 @@ case "$1" in
 	t) flutter test;;
 	up) flutter upgrade;;
 	h) flutter -h -v;;
-	*) echo -e "currently supports only:\ncr -> create\nr -> run\ncl -> clean\nv -> version\nt -> test\nup -> upgrade\nh -> help" ;;
+	pg) flutter pub get;;
+	po) flutter pub outdated;;
+	pu) flutter pub upgrade;;
+	a) flutter analyze;;
+	d) flutter doctor;;
+	c) flutter channel "$2";;
+	*) echo -e "currently supports only:\ncr -> create\nr -> run\ncl -> clean\nv -> version\nt -> test\nup -> upgrade\nh -> help\npg -> pub get\npo -> pub outdated\npu -> pub upgrade\na -> analyze\nd -> doctor\nc -> channel" ;;
 esac
