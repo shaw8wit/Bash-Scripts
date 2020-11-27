@@ -15,7 +15,14 @@
     + `t` for `test`
     + `up` for `upgrade`
     + `h` for `help`
+    + `pg` for `pub get`
+    + `po` for `pub outdated`
+    + `pu` for `pub upgrade`
+    + `a` for `analyze`
+    + `d` for `doctor`
+    + `c` for `channel`
   + `<function_type>` is:
     + `project_name` in `cr`
     + `device` in `run`
+    + `channel_name` for `c`
 + more to be added soon.
