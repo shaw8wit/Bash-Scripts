@@ -20,12 +20,8 @@
     + `pu` for `pub upgrade`
     + `a` for `analyze`
     + `d` for `doctor`
-<<<<<<< HEAD
     + `ch` for `channel`
     + `peanut` for peanut build and deployment
-=======
-    + `c` for `channel`
->>>>>>> b8ae0a12aec0b5770557afd7fde3545665539b9c
   + `<function_type>` is:
     + `project_name` in `cr`
     + `device` in `run`
