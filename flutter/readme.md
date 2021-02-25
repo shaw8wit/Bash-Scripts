@@ -15,6 +15,13 @@
     + `t` for `test`
     + `up` for `upgrade`
     + `h` for `help`
+    + `pg` for `pub get`
+    + `po` for `pub outdated`
+    + `pu` for `pub upgrade`
+    + `a` for `analyze`
+    + `d` for `doctor`
+    + `ch` for `channel`
+    + `peanut` for peanut build and deployment
   + `<function_type>` is:
     + `project_name` in `cr`
     + `device` in `run`
